@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@/db": [
+        "./app/(internal)/_providers/db/index.ts"
+      ],
+      "@/db/*": [
+        "./app/(internal)/_providers/db/*"
+      ],
+      "@/auth": [
+        "./app/(internal)/_providers/auth/index.ts"
+      ],
+      "@/auth/*": [
+        "./app/(internal)/_providers/auth/*"
+      ],
+      "@/intl": [
+        "./app/(internal)/_providers/intl/index.ts"
+      ],
+      "@/intl/*": [
+        "./app/(internal)/_providers/intl/*"
+      ]
+    },
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

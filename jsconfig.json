@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@/db": [
+        "./app/(internal)/_providers/db/index.ts"
+      ],
+      "@/db/*": [
+        "./app/(internal)/_providers/db/*"
+      ],
+      "@/auth": [
+        "./app/(internal)/_providers/auth/index.ts"
+      ],
+      "@/auth/*": [
+        "./app/(internal)/_providers/auth/*"
+      ]
+    }
+  }
+}
